@@ -17,7 +17,12 @@ def num_shutdowns(logfile):
     """
     Your docstring here.  Replace the pass keyword below with your implementation.
     """
-    pass
+    events = get_shutdown_events(logfile)
+    
+    ttaol_even = len(events)
+    
+    return ttaol_even
+
 
 
 # >>>> The code below will call your function and print the results
